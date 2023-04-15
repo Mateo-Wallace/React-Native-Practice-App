@@ -18,4 +18,13 @@ export const styles = StyleSheet.create({
     color: "#ffbd02",
     fontSize: 32,
   },
+  bigButton: {
+    backgroundColor: "#ff216e",
+    padding: 24,
+    borderRadius: 6,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 30,
+  },
 });
