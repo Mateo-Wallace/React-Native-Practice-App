@@ -30,7 +30,7 @@ export default function App() {
           <Text style={styles.punchline}>{jokes[index].punchline}</Text>
         </>
       )}
-      <TouchableOpacity style={styles.bigButton}>
+      <TouchableOpacity style={styles.bigButton} onPress={getNextJoke}>
         <Text style={styles.buttonText}>Tell me another</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
