@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import { styles } from "./src/styles";
 
 export default function App() {
@@ -26,11 +26,13 @@ export default function App() {
         </Text>
       ) : (
         <>
-          <Text style={styles.text}>{jokes[0].setup}</Text>
-          <Text style={styles.punchline}>{jokes[0].punchline}</Text>
+          <Text style={styles.text}>{jokes[index].setup}</Text>
+          <Text style={styles.punchline}>{jokes[index].punchline}</Text>
         </>
       )}
-
+      <TouchableOpacity>
+        <Text>Tell me another</Text>
+      </TouchableOpacity>
       <StatusBar style="auto" />
     </View>
   );
